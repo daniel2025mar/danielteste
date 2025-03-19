@@ -1,0 +1,438 @@
+/*Estilo geral*/
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Poppins", serif;
+  }
+  
+  /*button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }*/
+  
+  body{
+      
+      background-color: rgb(233, 233, 233);
+      
+
+      width: 100vw;  /* Ocupa toda a largura da tela */
+      height: 100vh; /* Ocupa toda a altura da tela */
+      /*background:*/
+      /*linear-gradient(-40deg, #000,#475c49) ;*/
+      overflow-x: hidden;
+   }
+
+   /* Modo Escuro */
+
+ /*retangulo top branco*/
+  .Retangulotop{
+    width: 1380px; /* Largura do retângulo */
+    height: 10px; /* Altura do retângulo */
+    background-color: #ffffff; /* Cor do retângulo */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    
+  }
+
+  /*retangulo top2 preto*/
+
+  .Retangulotop2{
+    width: 1380px; /* Largura do retângulo */
+    height: 100px; /* Altura do retângulo */
+    background-color: #000000; /* Cor do retângulo */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-weight: bold;
+    text-align: center;
+
+    
+  }
+/*TEXTO NO RETANGULO PRETO*/
+
+.Retangulotop2 h1{
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: -10px;
+  font-size: 60px;
+  cursor: pointer;
+}
+ /*subtitulo*/
+.Retangulotop2 p{
+  color: #cfcece;
+  margin-top: 79px;
+position: absolute;
+font: 1em sans-serif;
+margin-left: 130px;
+
+}
+/*REtangulo cinza topo*/
+
+.Retangulo-menu-desktop{
+  background-color: darkgray;
+  width: 1380px; /* Largura do retângulo */
+  height: 50px; /* Altura do retângulo */
+}
+
+/*estilo menu desktop*/
+
+.Retangulo-menu-desktop ul{
+  display: flex;  /* Utiliza flexbox para alinhar os itens horizontalmente */
+  font-size: 24px;
+  list-style-type: none;  /* Remove os marcadores da lista */
+  margin: 0;
+  padding: 0;
+}
+
+.Retangulo-menu-desktop ul li{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+/*cor do testo do menu*/
+.Retangulo-menu-desktop a{
+  color: #020202;
+}
+/*efeitos dos links*/
+a:hover{
+  color: rgb(253, 253, 253);
+  transition: color 0.3s ease, background-color 0.3s ease;  /* Efeito de transição suave */
+}
+
+/*estilo do serviço segunda parte*/
+
+.servi h2{
+text-align: center;
+margin-top: 40px;
+font-size: 40px;
+}
+
+.servi p{
+  text-align: center;
+}
+.retangu-foto{
+  background-color: #000000;
+  width: 1380px;
+  height: 550px;
+}
+/*foto top*/
+ .foto{
+  width: 1380px; /* Largura do retângulo */
+  height: 550px; /* Altura do retângulo */
+  opacity: 0.5;  /* Definindo 50% de opacidade (metade transparente) */
+}
+/*por que*/
+
+.tri h2{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+/*retangulo rodape*/
+
+.retangulorodape {
+  background-color: #000000;
+  width: 1380px;
+  height: 280px;
+  
+}
+
+.retangulorodape h3{
+  text-align: center;
+  margin-top: 60px;
+  
+  font-size: 30px;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.retangulorodape p{
+  margin-left: 40px;
+  color: #ffffff;
+}
+.retangulorodape p:hover{
+  color: rgb(211, 211, 211); /* Cor da palavra linkada */
+}
+
+.retangulorodape span{
+  color: #ffffff;
+  font-weight: bold;
+}
+/*RODAPE DIREITOS*/
+.borda{
+  text-align: center;
+}
+
+/*efeito do texto*/
+
+
+.borda a:hover{
+  
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.borda span:hover{
+  color: rgb(255, 0, 0); /* Cor da palavra linkada */
+}
+
+.borda span{
+  color: #020202;
+  font-weight: bold;
+}
+
+.borda a{
+  color: #000000;
+}
+  /*CELULAR*/
+@media screen and (max-width: 1020px){
+
+  body{
+    
+    
+    /*background:*/
+    /*linear-gradient(-40deg, #000,#475c49) ;*/
+    overflow-x: hidden;
+    touch-action: manipulation; /* Bloqueia zoom por gestos */
+    
+  
+    
+}
+
+  /*retangulobranco primeiro*/
+  .Retangulotop{
+    width: 768px; /* Largura do retângulo */
+    height: 10px; /* Altura do retângulo */
+    background-color: #ffffff; /* Cor do retângulo */
+    
+    
+  }
+
+ /*retangulo top2 preto*/
+
+ .Retangulotop2{
+  width: 768px; /* Largura do retângulo */
+  height: 85px; /* Altura do retângulo */
+  background-color: #000000; /* Cor do retângulo */
+  
+
+  
+}
+
+/*TEXTO NO RETANGULO PRETO*/
+
+.Retangulotop2 h1{
+  color: #ffffff;
+ margin-top: -5px;
+  margin-left: 150px;
+  text-align: center;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+ /*subtitulo*/
+ .Retangulotop2 p{
+  color: #cfcece;
+  margin-top: 65px;
+  position: absolute;
+  font: 1em sans-serif;
+  margin-left: 185px;
+
+}
+/*REtangulo cinza topo*/
+
+.Retangulo-menu-desktop{
+display: none;
+}
+
+.retangu-foto{
+  background-color: #000000;
+  width: 1020px;
+  height: 280px;
+}
+.foto{
+  width: 1020px; /* Largura do retângulo */
+    height: 280px; /* Altura do retângulo */
+    opacity: 0.5;  /* Definindo 50% de opacidade (metade transparente) */
+}
+  
+.retangulorodape{
+  background-color: #000000;
+  width: 1020px;
+  height: 250px;
+}
+
+.retangulorodape h3{
+  color: #ffffff;
+  
+  padding-right: 460px;
+}
+/*RODAPE DIREITOS*/
+
+footer .line-footer{
+  text-align: center;
+  
+}
+ .borda p{
+  
+  font-size: -300px;
+  align-items: center;
+}
+
+.borda a p{
+
+  font-size: -300px;
+  margin-left: 20px;
+}
+
+}
+
+
+/* Telas menores que 480px (Celulares pequenos) */
+@media screen and (max-width: 360px) {
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+    
+    touch-action: manipulation; /* Bloqueia zoom por gestos */
+  }
+
+   /*retangulobranco primeiro*/
+   .Retangulotop{
+    width: 360px; /* Largura do retângulo */
+    height: 10px; /* Altura do retângulo */
+    background-color: #ffffff; /* Cor do retângulo */
+    
+    
+  }
+
+ /*retangulo top2 preto*/
+
+ .Retangulotop2{
+  width: 360px; /* Largura do retângulo */
+  height: 85px; /* Altura do retângulo */
+  background-color: #000000; /* Cor do retângulo */
+  
+
+  
+}
+
+/*TEXTO NO RETANGULO PRETO*/
+
+.Retangulotop2 h1{
+  color: #ffffff;
+ margin-top: -5px;
+  margin-left: 77px;
+  text-align: center;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+ /*subtitulo*/
+ .Retangulotop2 p{
+  color: #cfcece;
+  margin-top: 65px;
+  position: absolute;
+  font: 1em sans-serif;
+  margin-left: 115px;
+
+}
+/*REtangulo cinza topo*/
+
+.Retangulo-menu-desktop{
+display: none;
+}
+    
+
+.retangu-foto{
+  background-color: #000000;
+  width: 360px;
+  height: 180px;
+}
+.foto{
+  width: 360px; /* Largura do retângulo */
+  height: 180px; /* Altura do retângulo */
+  opacity: 0.5;  /* Definindo 50% de opacidade (metade transparente) */
+}
+
+.servi h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  }
+
+  .servi p{
+    text-align: center;
+    font-size: 10px;
+  }
+ /*PORQUE*/
+
+ .tri h2{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+  /*retangulo rodape*/
+
+.retangulorodape{
+  background-color: #000000;
+  width: 360px;
+  height: 250px;
+}
+
+.retangulorodape h3{
+  color: #ffffff;
+  margin-left: 80px;
+  font-size: 30px;
+}
+
+
+.retangulorodape h3{
+  text-align: center;
+  margin-top: 60px;
+  
+  font-size: 30px;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.retangulorodape p{
+  margin-left: 50px;
+  
+  font-size: 12px;
+}
+.retangulorodape p:hover{
+  color: rgb(204, 204, 204); /* Cor da palavra linkada */
+}
+
+.retangulorodape span{
+  color: #ffffff;
+  font-weight: bold;
+}
+/*RODAPE DIREITOS*/
+
+footer .line-footer{
+  text-align: center;
+  
+}
+ .borda p{
+  
+  font-size: 10px;
+  
+  align-items: center;
+}
+
+.borda a p{
+
+  font-size: -300px;
+  margin-left: 20px;
+}
+
+}
